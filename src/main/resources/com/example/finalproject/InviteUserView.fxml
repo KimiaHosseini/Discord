@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="49.0" prefWidth="204.0" style="-fx-background-color: #505459; -fx-background-radius: 8px;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.InviteUserController">
+   <children>
+      <Circle fx:id="profileCircle" fill="DODGERBLUE" layoutX="29.0" layoutY="26.0" radius="23.0" stroke="#303030" strokeType="INSIDE" />
+      <Label fx:id="usernameLabel" layoutX="58.0" layoutY="15.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="inviteButton" layoutX="141.0" layoutY="14.0" mnemonicParsing="false" onAction="#inviteButtonPressed" style="-fx-background-color: #28d155;" text="Invite" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

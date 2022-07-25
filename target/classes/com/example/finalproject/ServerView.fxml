@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1225.0" style="-fx-background-color: #303030;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.ServerController">
+   <center>
+      <Pane fx:id="contentPane" style="-fx-background-color: #424549;" BorderPane.alignment="CENTER" />
+   </center>
+   <left>
+      <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" spacing="5.0" style="-fx-background-color: #303030;" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+               <children>
+                  <HBox alignment="TOP_RIGHT" layoutX="10.0" layoutY="10.0" spacing="50.0">
+                     <children>
+                        <Label fx:id="serverName" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="13.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button mnemonicParsing="false" onAction="#serverSettingButtonPressed" style="-fx-background-color: #303030;" text="⚙" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox spacing="70.0">
+                     <children>
+                        <Label opacity="0.7" text="TEXT CHANNELS" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="13.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button mnemonicParsing="false" onAction="#addChannel" style="-fx-background-color: #303030;" text="+" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+            <ListView fx:id="channelsListView" prefHeight="556.0" prefWidth="213.0" style="-fx-background-color: #303030; -fx-control-inner-background: #303030;" stylesheets="@../../../../../../../tempppp/FinalProject/src/main/resources/com/example/finalproject/ScrollBar.css">
+               <styleClass>
+                  <String fx:value="decrement-arrow" />
+                  <String fx:value="decrement-button" />
+                  <String fx:value="increment-arrow" />
+                  <String fx:value="increment-button" />
+                  <String fx:value="scroll-bar" />
+                  <String fx:value="thumb" />
+                  <String fx:value="track" />
+               </styleClass></ListView>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: white; -fx-background-radius: 15px;">
+               <children>
+                  <VBox alignment="TOP_CENTER" layoutX="7.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="8.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#chooseMusic" text="choose" />
+                        <Slider fx:id="slider">
+                           <VBox.margin>
+                              <Insets bottom="8.0" />
+                           </VBox.margin>
+                        </Slider>
+                        <HBox alignment="CENTER_LEFT">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#previousMusic" prefHeight="50.0" prefWidth="38.0" style="-fx-background-color: white;">
+                                 <graphic>
+                                    <ImageView fitHeight="32.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@previousMusic.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="playButton" mnemonicParsing="false" onAction="#playMusic" style="-fx-background-radius: 35px; -fx-background-color: #303030;" text="▷" textFill="#d7d7d7">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#nextMusic" prefHeight="44.0" prefWidth="26.0" style="-fx-background-color: white;">
+                                 <graphic>
+                                    <ImageView fitHeight="38.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@nextMusic.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </Pane>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: #303030;" VBox.vgrow="NEVER">
+               <children>
+                  <Circle fx:id="profileCircle" fill="DODGERBLUE" layoutX="30.0" layoutY="27.0" radius="23.0" stroke="#303030" strokeType="INSIDE" />
+                  <Circle fx:id="statusCircle" fill="#1fff5f" layoutX="46.0" layoutY="40.0" radius="10.0" stroke="#2e2e2e" strokeType="INSIDE" strokeWidth="2.0" />
+                  <Label fx:id="usernameLabel" layoutX="68.0" layoutY="4.0" text="Username" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.5" />
+                     </font>
+                  </Label>
+                  <Button layoutX="176.0" layoutY="1.0" mnemonicParsing="false" onAction="#settingButtonPressed" prefHeight="52.0" prefWidth="56.0" style="-fx-background-color: #303030;" text="⚙" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding>
+            </Pane>
+         </children>
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <right>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="174.0">
+               <children>
+                  <Label opacity="0.7" text="MEMBERS" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <ListView fx:id="UsersListView" prefHeight="682.0" prefWidth="174.0" style="-fx-background-color: #303030; -fx-control-inner-background: #303030;" stylesheets="@../../../../../../../tempppp/FinalProject/src/main/resources/com/example/finalproject/ScrollBar.css">
+                     <styleClass>
+                        <String fx:value="decrement-arrow" />
+                        <String fx:value="decrement-button" />
+                        <String fx:value="increment-arrow" />
+                        <String fx:value="increment-button" />
+                        <String fx:value="scroll-bar" />
+                        <String fx:value="thumb" />
+                        <String fx:value="track" />
+                     </styleClass></ListView>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </right>
+</BorderPane>

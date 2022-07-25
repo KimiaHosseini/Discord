@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="993.6" style="-fx-background-color: #424549;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.ChatController">
+   <children>
+      <VBox style="-fx-background-color: #424549;">
+         <children>
+            <ListView fx:id="listView" prefHeight="649.0" prefWidth="994.0" rotate="180.0" style="-fx-background-color: #424549; -fx-control-inner-background: #424549;" stylesheets="@ScrollBar.css">
+               <styleClass>
+                  <String fx:value="decrement-arrow" />
+                  <String fx:value="decrement-button" />
+                  <String fx:value="increment-arrow" />
+                  <String fx:value="increment-button" />
+                  <String fx:value="scroll-bar" />
+                  <String fx:value="thumb" />
+                  <String fx:value="track" />
+               </styleClass></ListView>
+            <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="994.0" spacing="2.0">
+               <children>
+                  <TextField fx:id="messageTf" onAction="#sendMessageButtonPressed" prefHeight="32.0" prefWidth="873.0" promptText="Message" style="-fx-background-color: #505459; -fx-background-radius: 6px; -fx-text-fill: white;" />
+                  <Button mnemonicParsing="false" onAction="#sendMessageButtonPressed" prefHeight="39.0" prefWidth="58.0" style="-fx-background-radius: 18px; -fx-background-color: #505459;" text="Send" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#sendFileButtonPressed" prefHeight="37.0" prefWidth="46.0" style="-fx-background-color: #505459; -fx-background-radius: 30px;" text="📎" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</Pane>

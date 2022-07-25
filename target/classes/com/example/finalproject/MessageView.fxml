@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#options" prefWidth="957.0" rotate="180.0" style="-fx-background-color: #424549; -fx-background-radius: 8px;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.MessageController">
+   <children>
+      <Circle fx:id="profileCircle" fill="DODGERBLUE" layoutX="29.0" layoutY="26.0" radius="23.0" stroke="#303030" strokeType="INSIDE" />
+      <VBox layoutX="58.0" layoutY="5.0" prefHeight="40.0" prefWidth="893.0">
+         <children>
+            <Label fx:id="usernameLabel" text="Label" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="text" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#showDownloadPopUp" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="index" textFill="#424549" />
+         </children>
+      </VBox>
+      <HBox layoutX="52.0" layoutY="63.0">
+         <children>
+            <Button fx:id="laugh" mnemonicParsing="false" style="-fx-background-color: #424549;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="like" mnemonicParsing="false" style="-fx-background-color: #424549;" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="dislike" mnemonicParsing="false" style="-fx-background-color: #424549;" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</Pane>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1300.0" spacing="20.0" style="-fx-background-color: #424549; -fx-background-radius: 8px; -fx-background-image: 'C:\Users\Lenovo\Desktop\background.webp';" styleClass="Background" stylesheets="@Background.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.welcome.WelcomeController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="364.0" prefWidth="458.0" style="-fx-background-color: #424549; -fx-background-radius: 8px;">
+         <children>
+            <Label text="Welcome !" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label opacity="0.7" text="So glad to have you here :)" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="15.0" />
+               </padding>
+            </Label>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="25.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#signUpButtonPressed" prefHeight="37.0" prefWidth="121.0" style="-fx-background-color: #7289da;" text="   SIGN UP   " textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#signInButtonPressed" prefHeight="37.0" prefWidth="122.0" style="-fx-background-color: #7289da;" text="    SIGN IN    " textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#aboutButtonPressed" prefHeight="38.0" prefWidth="122.0" style="-fx-background-color: #7289da #7289da;" text="ABOUT US" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#exitButtonPressed" prefHeight="37.0" prefWidth="124.0" style="-fx-background-color: #7289da #7289da;" text="       EXIT       " textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" top="15.0" />
+               </padding>
+            </VBox>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets left="25.0" right="25.0" top="25.0" />
+         </padding>
+      </VBox>
+   </children>
+</VBox>

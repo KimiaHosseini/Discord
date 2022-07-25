@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1300.0" style="-fx-background-color: #303030;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.MyAccountController">
+    <center>
+        <VBox prefHeight="700.0" prefWidth="661.0" style="-fx-background-color: #404040;" BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="BASELINE_LEFT" spacing="540.0">
+                    <children>
+                        <Label contentDisplay="TOP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="My Account" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="24.0" />
+                            </font>
+                            <padding>
+                                <Insets bottom="20.0" />
+                            </padding>
+                        </Label>
+                        <Button fx:id="escButton" mnemonicParsing="false" onAction="#escButtonPressed" style="-fx-background-color: #404040;" text="ESC" textFill="WHITE">
+                            <font>
+                                <Font size="17.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </HBox>
+                <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="419.0" prefWidth="628.0" style="-fx-background-color: #181818; -fx-background-radius: 8px;">
+                    <children>
+                        <HBox layoutX="1.0" layoutY="-3.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="111.0" prefWidth="627.0" style="-fx-background-color: #5865f2; -fx-background-radius: 8px;" />
+                        <Label fx:id="profileUsernameLabel" layoutX="133.0" layoutY="114.0" text="username" textAlignment="CENTER" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="20.0" />
+                            </font>
+                        </Label>
+                        <Button layoutX="487.0" layoutY="122.0" mnemonicParsing="false" onAction="#editProfileButtonPressed" style="-fx-background-color: #5865F2;" text="Edit User Profile" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Button>
+                        <GridPane layoutX="25.0" layoutY="172.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="232.0" prefWidth="588.0" style="-fx-background-color: #303030; -fx-background-radius: 8px;" vgap="5.0">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="634.7999572753906" minWidth="10.0" prefWidth="416.3999877929688" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="542.2000061035156" minWidth="10.0" prefWidth="94.80001220703133" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints vgrow="SOMETIMES" />
+                                <RowConstraints vgrow="SOMETIMES" />
+                                <RowConstraints vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Button mnemonicParsing="false" onAction="#editUsernameButtonPressed" style="-fx-background-color: #424549#99AAB5;" text="Edit" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+                                    <GridPane.margin>
+                                        <Insets right="10.0" />
+                                    </GridPane.margin>
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Button>
+                                <Button mnemonicParsing="false" onAction="#editEmailButtonPressed" style="-fx-background-color: #424549;" text="Edit" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                                    <GridPane.margin>
+                                        <Insets right="10.0" />
+                                    </GridPane.margin>
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Button>
+                                <Button mnemonicParsing="false" onAction="#PhoneNumberButtonPressed" style="-fx-background-color: #424549;" text="Add" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+                                    <GridPane.margin>
+                                        <Insets right="10.0" />
+                                    </GridPane.margin>
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Button>
+                                <VBox prefHeight="62.0" prefWidth="273.0" spacing="5.0" style="-fx-background-color: #303030;">
+                                    <children>
+                                        <Label opacity="0.7" text="USERNAME" textFill="WHITE">
+                                            <font>
+                                                <Font name="System Bold" size="14.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets top="15.0" />
+                                            </VBox.margin>
+                                        </Label>
+                                        <Label fx:id="usernameLabel" text="username" textFill="WHITE">
+                                            <font>
+                                                <Font size="18.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets />
+                                            </VBox.margin>
+                                        </Label>
+                                    </children>
+                                </VBox>
+                                <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="5.0" GridPane.rowIndex="1">
+                                    <children>
+                                        <Label opacity="0.7" text="EMAIL" textFill="WHITE">
+                                            <font>
+                                                <Font name="System Bold" size="14.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets top="15.0" />
+                                            </VBox.margin>
+                                        </Label>
+                                        <Label fx:id="emailLabel" text="email" textFill="WHITE">
+                                            <font>
+                                                <Font size="18.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </VBox>
+                                <VBox spacing="10.0" GridPane.rowIndex="2">
+                                    <children>
+                                        <Label opacity="0.7" text="PHONE NUMBER" textFill="WHITE">
+                                            <font>
+                                                <Font name="System Bold" size="14.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets top="15.0" />
+                                            </VBox.margin>
+                                        </Label>
+                                        <Label fx:id="phoneNumberLabel" text="You haven't added a phone number yet." textFill="WHITE">
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                    <GridPane.margin>
+                                        <Insets />
+                                    </GridPane.margin>
+                                </VBox>
+                            </children>
+                            <padding>
+                                <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                            </padding>
+                        </GridPane>
+                        <Circle fx:id="circle" fill="#5865f2" layoutX="67.0" layoutY="105.0" radius="53.0" stroke="#181818" strokeType="INSIDE" strokeWidth="8.0" />
+                        <Circle fx:id="statusCircle" fill="#17b917" layoutX="100.0" layoutY="138.0" radius="19.0" stroke="#181818" strokeType="INSIDE" strokeWidth="6.5" />
+                    </children>
+                    <padding>
+                        <Insets bottom="20.0" right="20.0" />
+                    </padding>
+                </Pane>
+                <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="151.0" prefWidth="652.0">
+                    <children>
+                        <Label alignment="CENTER" text="Password and Authentication" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="17.0" />
+                            </font>
+                            <padding>
+                                <Insets bottom="5.0" />
+                            </padding>
+                            <VBox.margin>
+                                <Insets bottom="10.0" top="30.0" />
+                            </VBox.margin>
+                        </Label>
+                        <Button mnemonicParsing="false" onAction="#changePasswordButtonPressed" style="-fx-background-color: #5865F2;" text="Change Password" textFill="#faf6f6">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                        </Button>
+                        <Label text="Log Out" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="17.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets bottom="10.0" top="10.0" />
+                            </VBox.margin>
+                        </Label>
+                        <Button mnemonicParsing="false" onAction="#logOutButtonPressed" style="-fx-background-color: red;" text="Log Out" textFill="#f7f2f2">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+            </children>
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+            <padding>
+                <Insets left="40.0" top="40.0" />
+            </padding>
+        </VBox>
+    </center>
+    <left>
+        <VBox alignment="TOP_CENTER" prefHeight="700.0" prefWidth="426.0" BorderPane.alignment="BOTTOM_CENTER">
+            <children>
+                <Label opacity="0.7" text="USER SETTINGS" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="5.0" />
+                    </padding>
+                </Label>
+                <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="31.0" prefWidth="271.0" style="-fx-background-color: #404040;" text="My Account" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font>
+                        </Button>
+                    </children>
+                    <padding>
+                        <Insets right="13.0" />
+                    </padding>
+                </HBox>
+            </children>
+            <padding>
+                <Insets top="60.0" />
+            </padding>
+        </VBox>
+    </left>
+</BorderPane>

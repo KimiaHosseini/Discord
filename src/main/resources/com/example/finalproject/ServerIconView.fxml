@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#enterServer" style="-fx-background-color: #202020;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.ServerIconController">
+   <children>
+      <Circle fx:id="serverCircle" fill="DODGERBLUE" layoutX="29.0" layoutY="29.0" radius="29.0" smooth="false" stroke="#303030" strokeType="INSIDE" />
+      <Label fx:id="serverLetter" layoutX="21.0" layoutY="14.0">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="serverIndex" text="0">
+         <font>
+            <Font size="2.0" />
+         </font>
+      </Label>
+      <Label fx:id="name">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: #202020; -fx-background-radius: 8px;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.PopUpAlertController">
+   <children>
+      <Label text="FRIEND REQUEST SENT!" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="5.0" />
+         </VBox.margin>
+      </Label>
+      <Label opacity="0.7" prefHeight="106.0" prefWidth="360.0" text="Success! Your friend request was sent. When this user accepts this request they will show up in your friends list." textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </Label>
+      <Button mnemonicParsing="false" onAction="#okayButtonPressed" prefHeight="34.0" prefWidth="357.0" style="-fx-background-color: #5865f2;" text="Okay" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

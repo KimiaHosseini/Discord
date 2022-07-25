@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#channelChosen" prefWidth="213.0" style="-fx-background-color: #424549;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.ChannelNameController">
+   <children>
+      <HBox alignment="CENTER_RIGHT" prefHeight="37.0" prefWidth="213.0" spacing="50.0" style="-fx-background-color: #424549;">
+         <children>
+            <Label fx:id="channelNameLabel" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="button" mnemonicParsing="false" onAction="#channelSettingButtonPressed" opacity="0.0" style="-fx-background-color: #424549;" text="🗑" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <Label fx:id="channelIndex" textFill="#424549">
+         <font>
+            <Font size="2.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: #424549; -fx-background-radius: 8px;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.account.ChangeUsernameController">
+    <children>
+        <Label text="Change your username" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="26.0" />
+            </font>
+            <VBox.margin>
+                <Insets bottom="10.0" />
+            </VBox.margin>
+        </Label>
+        <Label text="Enter a new username." textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+            <VBox.margin>
+                <Insets bottom="10.0" />
+            </VBox.margin>
+        </Label>
+        <VBox>
+            <children>
+                <Label opacity="0.7" text="USERNAME" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="5.0" />
+                    </VBox.margin>
+                </Label>
+                <TextField fx:id="usernameTf" onKeyTyped="#checkUsername">
+                    <VBox.margin>
+                        <Insets bottom="5.0" />
+                    </VBox.margin>
+                </TextField>
+                <Label fx:id="usernameStatus" prefHeight="17.0" prefWidth="203.0" />
+            </children>
+        </VBox>
+        <HBox alignment="TOP_RIGHT">
+            <children>
+                <Button mnemonicParsing="false" onAction="#cancelButtonPressed" style="-fx-background-color: #424549;" text="Cancel" textFill="WHITE" />
+                <Button mnemonicParsing="false" onAction="#doneButtonPressed" style="-fx-background-color: #7289da;" text="Done" textFill="WHITE" />
+            </children>
+        </HBox>
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="vBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="445.0" style="-fx-background-color: #303030;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.CreateRoleController">
+   <children>
+      <Label text="PERMISSIONS" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="8.0" />
+         </VBox.margin>
+      </Label>
+      <Label layoutX="10.0" layoutY="10.0" opacity="0.7" text="ROLE NAME" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="roleNameTf" onAction="#close" style="-fx-background-color: #202020;">
+         <VBox.margin>
+            <Insets top="2.0" />
+         </VBox.margin>
+      </TextField>
+      <Label fx:id="alertLabel" textFill="WHITE" />
+      <HBox>
+         <children>
+            <Label text="Change Server Name" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="22.0" prefWidth="228.0" />
+         </children>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <Label opacity="0.7" text="Allows members to change sever name." textFill="WHITE" />
+      <HBox layoutX="20.0" layoutY="119.0">
+         <children>
+            <Label text="Add Channel" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="22.0" prefWidth="286.0" />
+         </children>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <Label layoutX="20.0" layoutY="141.0" opacity="0.7" text="Allows members to add a channel." textFill="WHITE" />
+      <HBox layoutX="20.0" layoutY="119.0">
+         <children>
+            <Label text="Remove Channel" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="22.0" prefWidth="258.0" />
+         </children>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <Label layoutX="20.0" layoutY="192.0" opacity="0.7" text="Allows members to remove a channel." textFill="WHITE" />
+      <HBox layoutX="20.0" layoutY="220.0">
+         <children>
+            <Label text="Ban Members" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="22.0" prefWidth="278.0" />
+         </children>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <Label layoutX="20.0" layoutY="242.0" opacity="0.7" text="Allows members to ban a member." textFill="WHITE" />
+      <HBox layoutX="20.0" layoutY="270.0">
+         <children>
+            <Label text="Pin Messages" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="22.0" prefWidth="281.0" />
+         </children>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <Label layoutX="20.0" layoutY="292.0" opacity="0.7" text="Allows members to pin messages." textFill="WHITE" />
+      <HBox layoutX="20.0" layoutY="320.0">
+         <children>
+            <Label text="Remove Member" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="22.0" prefWidth="250.0" />
+         </children>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <Label layoutX="20.0" layoutY="343.0" opacity="0.7" text="Allows members to remove member." textFill="WHITE" />
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>

@@ -1,0 +1,5 @@
+.Background{
+    -fx-background-image: url("discordLogo.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: stretch;
+}

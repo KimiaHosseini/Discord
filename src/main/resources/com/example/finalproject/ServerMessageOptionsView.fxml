@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: #303030; -fx-background-radius: 8px;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.ServerMessageOptionsController">
+    <children>
+        <Button mnemonicParsing="false" onAction="#pinMessage" style="-fx-background-color: #303030;" text="Pin Message" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" onAction="#laughMessage" style="-fx-background-color: #303030;" text="Laugh at Message" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" onAction="#likeMessage" style="-fx-background-color: #303030;" text="Like Message" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" onAction="#dislikeMessage" style="-fx-background-color: #303030;" text="Dislike message" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" onAction="#goBack" style="-fx-background-color: #5865f2;" text="Done" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Button>
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>

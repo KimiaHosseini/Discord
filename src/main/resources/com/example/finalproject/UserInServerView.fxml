@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: #181818; -fx-background-radius: 8px;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.UserInServerController">
+   <children>
+      <HBox layoutY="-3.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="111.0" prefWidth="628.0" style="-fx-background-color: #5865f2; -fx-background-radius: 8px;" />
+      <Label fx:id="profileUsernameLabel" layoutX="133.0" layoutY="114.0" text="username" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="blockUnblockButton" layoutX="469.0" layoutY="122.0" mnemonicParsing="false" onAction="#blockUnblockButtonPressed" prefHeight="30.0" prefWidth="145.0" style="-fx-background-color: red;" text="Block" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="564.0" layoutY="173.0" mnemonicParsing="false" onAction="#goBack" style="-fx-background-color: #5865f2;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Circle fx:id="profileCircle" fill="#5865f2" layoutX="67.0" layoutY="105.0" radius="53.0" stroke="#181818" strokeType="INSIDE" strokeWidth="8.0" />
+      <Circle fx:id="statusCircle" fill="#17b917" layoutX="99.0" layoutY="137.0" radius="16.0" stroke="#181818" strokeType="INSIDE" strokeWidth="5.0" />
+      <Label layoutX="41.0" layoutY="174.0" text="Roles:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="rolesLabel" layoutX="39.0" layoutY="201.0" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

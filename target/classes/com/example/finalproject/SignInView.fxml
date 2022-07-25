@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1300.0" spacing="20.0" style="-fx-background-color: #424549; -fx-background-radius: 8px; -fx-background-image: 'C:\Users\Lenovo\Desktop\background.webp';" styleClass="Background" stylesheets="@Background.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.welcome.SignInController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <children>
+        <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="458.0" style="-fx-background-color: #424549; -fx-background-radius: 8px;">
+            <children>
+                <Label text="Welcome back!" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="26.0" />
+                    </font>
+                </Label>
+                <Label opacity="0.7" text="We're so excited to see you again!" textFill="WHITE">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                    <padding>
+                        <Insets bottom="20.0" />
+                    </padding>
+                </Label>
+                <VBox prefHeight="291.0" prefWidth="409.0">
+                    <children>
+                        <Label opacity="0.7" text="USERNAME" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                            <padding>
+                                <Insets bottom="5.0" top="15.0" />
+                            </padding>
+                        </Label>
+                        <TextField fx:id="usernameTf" prefHeight="40.0" prefWidth="400.0" style="-fx-background-color: #202020; -fx-text-fill: white;" />
+                        <Label opacity="0.7" text="PASSWORD" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                            <padding>
+                                <Insets bottom="5.0" top="15.0" />
+                            </padding>
+                        </Label>
+                        <PasswordField fx:id="passTf" prefHeight="40.0" prefWidth="400.0" style="-fx-background-color: #202020; -fx-text-fill: white;" />
+                  <Label fx:id="statusMessage" contentDisplay="CENTER" graphicTextGap="2.0" prefHeight="17.0" prefWidth="424.0" textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="110.0" />
+                     </padding>
+                  </Label>
+                        <Button mnemonicParsing="false" onAction="#loginButtonPressed" prefHeight="37.0" prefWidth="434.0" style="-fx-background-color: #5865F2;" text="Login" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets top="25.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Button>
+                        <Hyperlink onAction="#registerHLinkClicked" text="Need an account? Register">
+                            <VBox.margin>
+                                <Insets top="5.0" />
+                            </VBox.margin>
+                        </Hyperlink>
+                    </children>
+                </VBox>
+            </children>
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+            <padding>
+                <Insets left="25.0" right="25.0" top="25.0" />
+            </padding>
+        </VBox>
+    </children>
+</VBox>

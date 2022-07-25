@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: #303030; -fx-background-radius: 8px;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.CreateChannelController">
+   <children>
+      <Label text="Create Channel" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </Label>
+      <Label fx:id="alertLabel" opacity="0.7" text="Enter a channel name." textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </Label>
+      <VBox>
+         <children>
+            <TextField fx:id="channelNameTf" prefHeight="32.0" prefWidth="250.0" style="-fx-background-color: #202020; -fx-text-fill: white;">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+      </VBox>
+      <HBox alignment="TOP_RIGHT">
+         <children>
+            <Button mnemonicParsing="false" onAction="#cancelButtonPressed" style="-fx-background-color: #424549;" text="Cancel" textFill="WHITE" />
+            <Button mnemonicParsing="false" onAction="#createChannelButtonPressed" style="-fx-background-color: #7289da;" text="Create Channel" textFill="WHITE" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
